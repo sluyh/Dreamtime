@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    background-image: url('./src/bg.jpg');
+}
+
+a {
+    text-decoration: none;
+}
+
+#wrapper {
+    background-color: white;
+    max-width: 700px;
+    margin: 80px auto;
+}
+
+#logo {
+    position: absolute;
+    float: left;
+    width: 150px;
+    height: 50px;
+}
+
+#menu {
+    background-color: #333333;
+    width: 100%;
+}
+
+#menu ul {
+    padding: 0 88px;
+    list-style: none;
+}
+
+#menu li {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+#menu a {
+    display: block; 
+    padding: 0 50px;
+    color: #fff;
+    text-align: center;
+    line-height: 42px;
+}
+
+#menu a:hover {
+    background-color: #555;
+}
+
+#footer {
+    text-align: center;
+    position: relative;
+    float: inherit;
+}
