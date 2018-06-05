@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Dreamtime</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="./souse/icon.jpg" type="image/x-icon" />
+    <link rel="shortcut icon" href="/source/icon.jpg" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="main.js"></script>
 </head>
@@ -18,31 +18,32 @@
             <div id="menu">
                 <ul>
                     <li>
-                        <a href="">首页</a>
+                        <a href="/index.html">首页</a>
                     </li>
                     <li>
-                        <a href="">故事</a>
+                        <a href="/story.html">故事</a>
                     </li>
                     <li>
-                        <a href="">关于</a>
+                        <a href="/music.html">音乐</a>
                     </li>
                     <li>
-                        <a href="">留言</a>
+                        <a href="/about.html">关于</a>
+                    </li>
+                    <li>
+                        <a class="active" href="/message.html">留言</a>
                     </li>
                 </ul>
             </div>
         </div>
-        <div id="container" style="margin: 50px;text-align: center;">
-            <p style="font-size: 30px;"> 留言板：</p>
-            <form style="text-align: center;">
+        <div id="container" >
+            <p style="font-size: 30px;margin: 50px;text-align: center;"> 留言板：</p>
+            <form style="width: 300px;margin: auto;">
                 名字：
-                <br>
                 <input type="text" name="name">
                 <br>
-                <br>
-                <input type="radio" name="sex">男生
-                <input type="radio" name="sex">女生
-                <br>
+                性别：
+                <input class="sex" type="radio" name="sex">男生
+                <input class="sex" type="radio" name="sex">女生
                 <br>
                 年龄：
                 <select name="age">
@@ -60,7 +61,7 @@
                 <textarea name="message"></textarea> 
                 <br>
                 <br>
-                <input type="submit" value="提交">
+                <input id="submit" type="submit" value="提交">
             </form>
         </div>
         <div id="footer"> 
