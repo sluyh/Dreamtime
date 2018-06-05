@@ -47,6 +47,7 @@ input[type="submit"] {
 }
 
 #wrapper {
+    position: relative;
     background-color: white;
     max-width: 700px;
     margin: 80px auto;
@@ -95,6 +96,22 @@ input[type="submit"] {
 #menu a:hover,
 #menu a.active {
     background-color: #555;
+}
+
+#container {
+    
+}
+
+.list {
+    list-style: none;
+    width: 150px;
+    margin: 0;
+    padding: 0;
+}
+
+#content {
+    width: 510px;
+    text-align: center;
 }
 
 #footer {
