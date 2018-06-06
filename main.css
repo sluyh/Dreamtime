@@ -77,24 +77,24 @@ input[type="submit"] {
     margin: 0;
     padding: 0;
     list-style: none;
+    text-align: center;
 }
 
 #menu li {
     position: relative;
     display: inline-block;
     text-align: center;
+    padding: 0 45px;
 }
 
 #menu a {
-    display: block;
-    width: 137px;
     color: #fff;
     text-align: center;
     line-height: 42px;
 }
 
-#menu a:hover,
-#menu a.active {
+#menu li:hover,
+#menu li.active {
     background-color: #555;
 }
 
