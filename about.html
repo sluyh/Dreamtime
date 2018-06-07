@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Dreamtime</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="/source/icon.jpg" type="image/x-icon" />
+    <link rel="icon" href="./souse/icon.jpg" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="main.js"></script>
 </head>
@@ -29,39 +29,31 @@
                         <li>音乐</li>
                     </a>
                     <a href="/about.html">
-                        <li>关于</li>
+                        <li class="active">关于</li>
                     </a>
                     <a href="/message.html">
-                        <li class="active">留言</li>
+                        <li>留言</li>
                     </a>
                 </ul>
             </div>
         </div>
         <div id="container">
-            <p style="font-size: 30px;margin: 50px;text-align: center;"> 留言板：</p>
-            <form style="width: 300px;margin: auto;">
-                名字：
-                <input type="text" name="name">
-                <br> 性别：
-                <input class="sex" type="radio" name="sex">男生
-                <input class="sex" type="radio" name="sex">女生
-                <br> 年龄：
-                <select name="age">
-                    <option value="0~10">0~10</option>
-                    <option value="10~20">10~20</option>
-                    <option value="20~30">20~30</option>
-                    <option value="30~40">30~40</option>
-                    <option value="40~50">40~50</option>
-                    <option value="50~60">50~60</option>
-                </select>
+            <div class="introduction">
+                <p>作者 ： Sluyh</p>
                 <br>
-                <br> 留言：
+                <a class="introduction btn" href="mailto:i@sluyh.com">✉ 发送邮件</a>
+                <a class="introduction btn" href="#" target="_blank">☆ 个人主页</a>
+            </div>
+            <div class="post-footer">
+                <div class="author-image">
+                    <a class="img" href="https://sluyh.com" style="background-image: url(./source/avatar.jpeg);" target="_blank"></a>
+                </div>
+            </div>
+            <p class="introduction">
+                <br> It's nice to meet you.
                 <br>
-                <textarea name="message"></textarea>
-                <br>
-                <br>
-                <input id="submit" type="submit" value="提交" onclick="alert('感谢提交！')">
-            </form>
+                <br> Très heureux de vous rencontrer.
+            </p>
         </div>
     </div>
     <div id="footer">

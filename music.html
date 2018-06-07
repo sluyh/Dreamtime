@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,10 +11,11 @@
     <script src="main.js"></script>
     <style>
         .music-list li:hover {
-        color: #888;
+            color: #888;
         }
     </style>
 </head>
+
 <body>
     <div id="wrapper">
         <div id="header">
@@ -22,43 +24,50 @@
             </div>
             <div id="menu">
                 <ul>
-                    <li>
-                        <a href="/index.html">首页</a>
-                    </li>
-                    <li>
-                        <a href="/story.html">故事</a>
-                    </li>
-                    <li class="active">
-                        <a href="/music.html">音乐</a>
-                    </li>
-                    <li>
-                        <a href="/about.html">关于</a>
-                    </li>
-                    <li>
-                        <a href="/message.html">留言</a>
-                    </li>
+                    <a href="/index.html">
+                        <li>首页</li>
+                    </a>
+                    <a href="/story.html">
+                        <li>故事</li>
+                    </a>
+                    <a href="/music.html">
+                        <li class="active">音乐</li>
+                    </a>
+                    <a href="/about.html">
+                        <li>关于</li>
+                    </a>
+                    <a href="/message.html">
+                        <li>留言</li>
+                    </a>
                 </ul>
             </div>
         </div>
         <div id="container" style="text-align: center;">
-            <div id="">
-                <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=420 height=86 src="//music.163.com/outchain/player?type=2&id=34609166&auto=1&height=66"></iframe>
-            </div>
+            <iframe id="music-iframe" frameborder="no" border="0" marginwidth="0" marginheight="0" width=420 height=86 src="//music.163.com/outchain/player?type=2&id=34609166&auto=0&height=66"></iframe>
             <div>
-                <ul class="music-list" style="padding:0px;line-height: 60px;list-style: none;">
-                    <li style="background-color: #CCC;">▷ 故梦</li>
-                    <li style="background-color: #EEE;">▷ 山鬼</li>
-                    <li style="background-color: #CCC;">▷ 花凋</li>
-                    <li style="background-color: #EEE;">▷ 山有木兮</li>
-                    <li style="background-color: #CCC;">▷ 长安忆</li>
-                    <li style="background-color: #EEE;">▷ 钗头凤</li>
-                    <li style="background-color: #CCC;">▷ 浮生未歇</li>
+                <ul class="music-list" style="padding:0px;line-height: 60px;list-style: none;cursor: pointer;">
+                    <li onclick="document.getElementById('music-iframe').setAttribute('src','//music.163.com/outchain/player?type=2&id=34609166&auto=1&height=66')"
+                        style="background-color: #CCC;">▷ 故梦</li>
+                    <li onclick="document.getElementById('music-iframe').setAttribute('src','//music.163.com/outchain/player?type=2&id=28496172&auto=1&height=66')"
+                        style="background-color: #EEE;">▷ 山鬼</li>
+                    <li onclick="document.getElementById('music-iframe').setAttribute('src','//music.163.com/outchain/player?type=2&id=34072446&auto=1&height=66')"
+                        style="background-color: #CCC;">▷ 花凋</li>
+                    <li onclick="document.getElementById('music-iframe').setAttribute('src','//music.163.com/outchain/player?type=2&id=425100599&auto=1&height=66')"
+                        style="background-color: #EEE;">▷ 山有木兮</li>
+                    <li onclick="document.getElementById('music-iframe').setAttribute('src','//music.163.com/outchain/player?type=2&id=27902967&auto=1&height=66')"
+                        style="background-color: #CCC;">▷ 长安忆</li>
+                    <li onclick="document.getElementById('music-iframe').setAttribute('src','//music.163.com/outchain/player?type=2&id=32408606&auto=1&height=66')"
+                        style="background-color: #EEE;">▷ 的</li>
+                    <li onclick="document.getElementById('music-iframe').setAttribute('src','//music.163.com/outchain/player?type=2&id=184557&auto=1&height=66')"
+                        style="background-color: #CCC;">▷ 浮生未歇</li>
+                    <li style="background-color: #EEE;">···</li>
                 </ul>
             </div>
         </div>
-        <div id="footer">
-            Copyright &copy; 2018
-        </div>
+    </div>
+    <div id="footer">
+        Copyright &copy; 2018
     </div>
 </body>
+
 </html>
