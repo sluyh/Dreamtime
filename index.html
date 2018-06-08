@@ -45,14 +45,14 @@
                     <li><img src="./source/5.jpeg"></li>
                 </ul>
             </div>
-            <table border="0">
+            <table align="center" style="margin-top: 150px;" border="1" cellspacing="0">
                 <tr>
-                    <td>123</td>
-                    <td>456</td>
+                    <th>当前时区：</td>
+                    <td><script>document.write(new Date().toLocaleString())</script></td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
+                    <th>标准时区：</th>
+                    <td><script>document.write(new Date().toUTCString())</script></td>
                 </tr>
             </table>
         </div>
